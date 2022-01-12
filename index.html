@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Todo_List</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="parent">
+            <div class="sidebar">
+                <h1 class="list-header">MY LIST</h1>
+                <ul class="todo-list" data-list>
+
+                </ul>
+                <div>
+                    <form action="" class="list-form" data-new-list-form>
+                        <input type="text" class="create-list" placeholder="Add New List" data-new-list-input>
+                        <button class="btn-create-list">+</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="todo-items-parent" data-list-display-container>
+                    <div class="todo-items-body">
+                        <div class="items-header">
+                            <h1 class="items-header-name" data-list-title>No Selected Task</h1>
+                            <p class="items-count" data-list-count></p>
+                        </div>
+                        <hr>
+                        <div class="todo-items-container">
+                            <div class="todo-items" data-tasks>
+
+
+
+                            </div>
+
+                            <div>
+                                <form action="" class="list-form" data-new-task-form>
+                                    <input type="text" class="create-item" placeholder="Add New Item" data-new-task-input>
+                                    <button class="btn-create-item">+</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edit-list">
+                        <button class="delete" data-clear-complete-tasks-button>Clear Completed Task</button>
+                        <button class="delete" data-delete-list-btn>Delete List</button>
+                    </div>
+                </div>
+
+                <div class="color-div" backgroundColors>
+                    <div class="black colors" id="black"></div>
+                    <div class="purple colors" id="purple"></div>
+                    <div class="orange colors" id="orange"></div>
+                    <div class="darkBlue colors" id="darkBlue"></div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+
+    <script defer src="/js/main.js"></script>
+    <template id="task-template">
+        <div class="task">
+            <input type="checkbox"/>
+            <label >
+            <span class="custom-checkbox"></span>
+            
+            </label>
+        </div>
+        <hr>
+    </template>
+</body>
+
+</html>
